@@ -1,4 +1,4 @@
-///5:06
+///5:26
 import './App.css';
 import freeCodeCampLogo from './img/freeCodeCampLogo.png'
 import Boton from './components/Boton';
