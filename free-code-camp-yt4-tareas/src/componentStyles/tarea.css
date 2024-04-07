@@ -9,7 +9,11 @@
     align-items: center;
     border-radius: 7px;
     border: 1px solid white;
-  
+}
+
+.tarea-contenedor .completada{
+    background-color: #5a01a7;
+    text-decoration: line-through;
 }
 
 .tarea-texto{
