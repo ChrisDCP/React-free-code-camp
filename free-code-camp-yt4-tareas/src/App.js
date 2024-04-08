@@ -2,6 +2,7 @@
 import freeCodeCampLogo from './img/banner 2.jpg'
 import './App.css';
 import ListaDeTareas from './components/ListaDeTareas';
+import Tarea from './components/Tarea';
 
 function App() {
   return (
