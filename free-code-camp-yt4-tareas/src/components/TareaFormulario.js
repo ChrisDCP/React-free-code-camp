@@ -1,23 +1,32 @@
 import React,{useState} from 'react'
+import {v4 as uuidv4 } from 'uuid'
 import '../componentStyles/tareaFormulario.css'
 
-function TareaFormulario () {
+function TareaFormulario (props) {
 
     const [input, SetInput] = useState('')
 
     const manejarCambio = e =>{
         SetInput(e.target.value)
+
     }
 
     const manejarEnvio= e =>{
+        e.preventDefault()
+
         const tareaNueva ={
-            id: '34545',
-            texto: 'hola'
+            id: uuidv4(),
+            texto: input,
+            completada: false
         }
+        props.onSubmit(tareaNueva)
     }
 
   return (
-    <form className='tarea-formulario' >
+    <form 
+        className='tarea-formulario'
+        onSubmit={manejarEnvio}
+    >
         <input
         className='tarea-input'
         type='text'
@@ -26,7 +35,7 @@ function TareaFormulario () {
         onChange={manejarCambio}
         />
         <button className='tarea-boton' >
-            Agregar
+            Agregar Tarea
         </button>
 
     </form>

@@ -9,9 +9,11 @@ function Tarea({ id, texto, completada, completarTarea, eliminarTarea }) {
     <div className={completada ? 'tarea-contenedor completada' : 'tarea-contenedor'} >
       <div 
         onClick={()=>completarTarea(id)}
-        className='tarea-texto' >
+        className='tarea-texto' 
+      >
         {texto}
       </div>
+      
       <div 
         onClick={() => eliminarTarea(id)}
         className='tarea-contenedor-iconos' >

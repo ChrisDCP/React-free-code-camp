@@ -1,8 +1,7 @@
-//6:40
+//6:55
 import freeCodeCampLogo from './img/banner 2.jpg'
 import './App.css';
 import ListaDeTareas from './components/ListaDeTareas';
-import Tarea from './components/Tarea';
 
 function App() {
   return (
@@ -19,7 +18,7 @@ function App() {
        <ListaDeTareas/>
       </div>
     </div>
-  );
+  )
 }
 
 export default App;
