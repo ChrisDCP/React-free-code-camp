@@ -8,7 +8,6 @@ function TareaFormulario (props) {
 
     const manejarCambio = e =>{
         SetInput(e.target.value)
-
     }
 
     const manejarEnvio= e =>{
