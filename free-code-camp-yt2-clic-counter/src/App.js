@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useStateb } from 'react';
+import { useState } from 'react';
 import freeCodeCampLogo from './img/banner 2.jpg'
 import Boton from './components/Button.js';
 import Contador from './components/Contador.js';
